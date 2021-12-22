@@ -2,52 +2,38 @@ Gravitational lensing H_0 tension from ultralight axion galactic cores
 ==============================
 
 This repository hosts the programs needed to obtain some of the results showed in the paper
-**Gravitational lensing H_0 tension from ultralight axion galactic cores** by Kfir Blum and Luca Teodori.
-We used the `lenstronomy <https://github.com/sibirrer/lenstronomy>`_ package to perform our analysis.
+**Comments on the mass sheet degeneracy in cosmography analyses** by Luca Teodori, Kfir Blum, Emanuele Castorina, Marko Simonovic and Yotam Soreq.
 
 Abstract
 --------
-Gravitational lensing time delays offer an avenue to measure the Hubble parameter H_0, with some
-analyses suggesting a tension with early-type probes of H_0. The lensing measurements must mitigate
-systematic uncertainties due to the mass modelling of lens galaxies. In particular, a core component
-in the lens density profile would form an approximate local mass sheet degeneracy and could bias H_0
-in the right direction to solve the lensing tension. We consider ultralight dark matter as a possible
-mechanism to generate such galactic cores. We show that cores of roughly the required properties could
-arise naturally if an ultralight axion of mass $ m \sim 10^−25$ eV makes up a fraction of order ten percent of
-the total cosmological dark matter density. A relic abundance of this order of magnitude could come from
-vacuum misalignment. Stellar kinematics measurements of well-resolved massive galaxies (including the
-Milky Way) may offer a way to test the scenario. Kinematics analyses aiming to test the core hypothesis
-in massive elliptical lens galaxies should not, in general, adopt the perfect mass sheet limit, as ignoring
-the finite extent of an actual physical core could lead to significant systematic errors.
+We make a number of comments regarding modelling degeneracies in strong lensing measurements ofthe Hubble parameter H0.  The first point concerns the use of stellar kinematics to resolve the mass sheet degeneracy:  we show that external convergence terms associated with the lens-source and observer-lens lines of sight need to be included in cosmographic modelling, in addition to the usual observer-source term, to avoid systematic bias in the inferred value of H0.  The second point concerns the use of imaging data for multiple strongly-lensed sources in a given system.  We show that the mass sheet degeneracy is not fully resolved by the availability of multiple sources: some degeneracy remains because of differential external convergence between the different sources. Similarly, differential external convergence also complicates the use of multiple sources in addressing the approximate mass sheet degeneracy associated with a local (“internal”) core component in lens galaxies.  This internal-external degeneracy is amplified by the non-monotonicity of the angular diameter distance as a function of redshift. For a rough assessment of the weak lensing effects, we provide estimates of external convergence using the nonlinear matter power spectrum, paying attention to non-equal time correlators.
 
 Notebooks
 ---------
 For understanding on how we obtained our results,
-we prepared dedicated jupyter notebooks:
+we prepared a dedicated jupyter notebook:
 
-* ``Velocity_dispersion.ipynb``: Showing the velocity dispersion influence of a core
-* ``Mock_analysis_uldm2PL.ipynb``: Parameter inference by using a power law model for a mock lens obtained with a power law + soliton model.
-* ``Mock_analysis_uldm2uldm_No_H0_prior.ipynb``: Parameter inference by using a power law + soliton
-  model with flat prior on the Hubble constant for a mock lens obtained with a power law + soliton model.
-* ``Mock_analysis_uldm2uldm_H0_prior.ipynb``: Parameter inference by using a power law + soliton
-  model with gaussian prior on the Hubble constant centered on the CMB value, for a mock lens obtained with a power law + soliton model.
+* ``delta_kappa_nonlinear.ipynb``: Showing the plots regarding the RMS of external convergences and related
 
 Authors
 -------
-- Kfir Blum; kfir.blum@weizmann.ac.il
 - Luca Teodori; luca.teodori@weizmann.ac.il
+- Kfir Blum; kfir.blum@weizmann.ac.il
+- Emanuele Castorina; emanuele.castorina@unimi.it
+- Marko Simonovic; marko.simonovic@cern.ch
+- Yotam Soreq; soreqy@physics.technion.ac.il
 
-Citations
----------
-To cite our work::
-
-  @article{Blum:2021oxj,
-      author = "Blum, Kfir and Teodori, Luca",
-      title = "{Gravitational lensing $H_0$ tension from ultralight axion galactic cores}",
-      eprint = "2105.10873",
-      archivePrefix = "arXiv",
-      primaryClass = "astro-ph.CO",
-      month = "5",
-      year = "2021"
-  }
+.. Citations
+.. ---------
+.. To cite our work::
+..
+..   @article{Blum:2021oxj,
+..       author = "Blum, Kfir and Teodori, Luca",
+..       title = "{Gravitational lensing $H_0$ tension from ultralight axion galactic cores}",
+..       eprint = "2105.10873",
+..       archivePrefix = "arXiv",
+..       primaryClass = "astro-ph.CO",
+..       month = "5",
+..       year = "2021"
+..   }
 
