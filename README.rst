@@ -1,4 +1,4 @@
-Gravitational lensing H_0 tension from ultralight axion galactic cores
+Comments on the mass sheet degeneracy in cosmography analyses
 ==============================
 
 This repository hosts the programs needed to obtain some of the results showed in the paper
@@ -13,6 +13,7 @@ Notebooks
 For understanding on how we obtained our results,
 we prepared a dedicated jupyter notebook:
 
+* ``kappa_linear.ipynb``: Computing \kappa^s RMS just in linear theory
 * ``delta_kappa_nonlinear.ipynb``: Showing the plots regarding the RMS of external convergences and related
 
 Authors
